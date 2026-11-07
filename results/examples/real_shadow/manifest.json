@@ -1,0 +1,131 @@
+{
+  "page_count": 1,
+  "elapsed_seconds": 2.582240299998375,
+  "pages": [
+    {
+      "index": 0,
+      "geometry": {
+        "quad": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            2141.90625,
+            0.0
+          ],
+          [
+            2141.90625,
+            1658.25
+          ],
+          [
+            0.0,
+            1658.25
+          ]
+        ],
+        "bbox": [
+          0,
+          0,
+          2142,
+          1659
+        ],
+        "confidence": 0.565475460718952,
+        "source_size": [
+          2144,
+          1660
+        ],
+        "fallback": false
+      },
+      "before": {
+        "background_std": 0.05807160586118698,
+        "illumination_variation": 0.02669089287519455,
+        "edge_energy": 0.5207526683807373,
+        "laplacian_variance": 0.02468019723892212,
+        "noise_sigma": 0.0,
+        "glare_ratio": 0.031788316784506915,
+        "clipped_black_ratio": 0.0032290393017399403,
+        "clipped_white_ratio": 0.0002815564757004948,
+        "contrast": 0.7639176100492477,
+        "readability_score": 92.90249145542533,
+        "readability_label": "readable"
+      },
+      "after": {
+        "background_std": 0.018715929239988327,
+        "illumination_variation": 0.012063219211995602,
+        "edge_energy": 0.6120682954788208,
+        "laplacian_variance": 0.04135798290371895,
+        "noise_sigma": 0.0,
+        "glare_ratio": 0.14946936027049673,
+        "clipped_black_ratio": 0.0006984063228414871,
+        "clipped_white_ratio": 0.011242288488784292,
+        "contrast": 0.7472556918859481,
+        "readability_score": 87.98946346466741,
+        "readability_label": "readable"
+      },
+      "warnings": [
+        {
+          "code": "glare_residual",
+          "message": "Possible glare remains on 14.9% of pixels.",
+          "severity": "warning"
+        }
+      ]
+    }
+  ],
+  "input": "C:\\Users\\Yukinoshita\\Documents\\ChatGPT\\图像处理2\\third_party\\Doc-Image-Tool\\test\\阴影.jpg",
+  "config": {
+    "seed": 3407,
+    "pages": {
+      "enabled": true,
+      "max_pages": 8,
+      "detect_size": 1024,
+      "min_area_ratio": 0.035,
+      "white_background": true,
+      "perspective_enabled": true,
+      "min_confidence": 0.2
+    },
+    "illumination": {
+      "enabled": true,
+      "estimator": "guided",
+      "work_size": 1200,
+      "morph_kernel": 41,
+      "guided_radius": 24,
+      "guided_eps": 0.015,
+      "retinex_scales": [
+        15,
+        80,
+        250
+      ],
+      "water_iterations": 500,
+      "target_percentile": 92,
+      "max_gain": 3.2,
+      "strength": 0.92,
+      "residual_strength": 0.18,
+      "color_strength": 0.3,
+      "edge_protection": 0.0
+    },
+    "restoration": {
+      "denoise": true,
+      "noise_threshold": 0.018,
+      "denoise_strength": 5.0,
+      "deblur": true,
+      "sharpen_amount": 0.0,
+      "sharpen_radius": 1.0,
+      "glare": true,
+      "glare_threshold": 0.94,
+      "max_inpaint_ratio": 0.025,
+      "scratches": false,
+      "scratch_strength": 0.5,
+      "fading": true,
+      "fade_strength": 0.28,
+      "clahe_clip": 1.2
+    },
+    "quality": {
+      "warn_edge_retention": 0.72,
+      "warn_glare_ratio": 0.08
+    },
+    "output": {
+      "save_intermediates": false,
+      "jpeg_quality": 95
+    }
+  }
+}

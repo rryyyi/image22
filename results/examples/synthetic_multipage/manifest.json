@@ -1,0 +1,199 @@
+{
+  "page_count": 2,
+  "elapsed_seconds": 0.7041055000008782,
+  "pages": [
+    {
+      "index": 0,
+      "geometry": {
+        "quad": [
+          [
+            40.828125,
+            53.390625
+          ],
+          [
+            490.984375,
+            52.34375
+          ],
+          [
+            490.984375,
+            663.71875
+          ],
+          [
+            39.78125,
+            663.71875
+          ]
+        ],
+        "bbox": [
+          39,
+          52,
+          452,
+          612
+        ],
+        "confidence": 0.9511463294913283,
+        "source_size": [
+          1072,
+          715
+        ],
+        "fallback": false
+      },
+      "before": {
+        "background_std": 0.02785630337893963,
+        "illumination_variation": 0.01974075846374035,
+        "edge_energy": 0.5662184357643127,
+        "laplacian_variance": 0.024046793580055237,
+        "noise_sigma": 0.0,
+        "glare_ratio": 0.08500708543004222,
+        "clipped_black_ratio": 0.00012291052114060964,
+        "clipped_white_ratio": 0.0007736132801203077,
+        "contrast": 0.4027489423751831,
+        "readability_score": 82.93271991150262,
+        "readability_label": "readable"
+      },
+      "after": {
+        "background_std": 0.010759709402918816,
+        "illumination_variation": 0.016891291365027428,
+        "edge_energy": 0.6662341952323914,
+        "laplacian_variance": 0.03639514371752739,
+        "noise_sigma": 0.0,
+        "glare_ratio": 0.5081229394412632,
+        "clipped_black_ratio": 0.00012652553646827461,
+        "clipped_white_ratio": 0.0,
+        "contrast": 0.45098042488098145,
+        "readability_score": 82.68389499435823,
+        "readability_label": "readable"
+      },
+      "warnings": [
+        {
+          "code": "glare_residual",
+          "message": "Possible glare remains on 50.8% of pixels.",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "geometry": {
+        "quad": [
+          [
+            552.75,
+            145.515625
+          ],
+          [
+            1010.234375,
+            126.671875
+          ],
+          [
+            1010.234375,
+            660.578125
+          ],
+          [
+            552.75,
+            660.578125
+          ]
+        ],
+        "bbox": [
+          552,
+          126,
+          459,
+          535
+        ],
+        "confidence": 0.8949596413302752,
+        "source_size": [
+          1072,
+          715
+        ],
+        "fallback": false
+      },
+      "before": {
+        "background_std": 0.027016986161470413,
+        "illumination_variation": 0.03536790981888771,
+        "edge_energy": 0.5206649303436279,
+        "laplacian_variance": 0.018426712602376938,
+        "noise_sigma": 0.0,
+        "glare_ratio": 0.011353409484250605,
+        "clipped_black_ratio": 0.0005375358866287948,
+        "clipped_white_ratio": 0.00040722415653696577,
+        "contrast": 0.6223999857902527,
+        "readability_score": 93.15923090649784,
+        "readability_label": "readable"
+      },
+      "after": {
+        "background_std": 0.012039058841764927,
+        "illumination_variation": 0.03278231620788574,
+        "edge_energy": 0.5750455260276794,
+        "laplacian_variance": 0.02383996732532978,
+        "noise_sigma": 0.0,
+        "glare_ratio": 0.14019913261254657,
+        "clipped_black_ratio": 0.0002891291511412457,
+        "clipped_white_ratio": 0.00987518579602142,
+        "contrast": 0.545098066329956,
+        "readability_score": 84.31346546519886,
+        "readability_label": "readable"
+      },
+      "warnings": [
+        {
+          "code": "glare_residual",
+          "message": "Possible glare remains on 14.0% of pixels.",
+          "severity": "warning"
+        }
+      ]
+    }
+  ],
+  "input": "C:\\Users\\Yukinoshita\\Documents\\ChatGPT\\图像处理2\\data\\synthetic\\multipage.png",
+  "config": {
+    "seed": 3407,
+    "pages": {
+      "enabled": true,
+      "max_pages": 8,
+      "detect_size": 1024,
+      "min_area_ratio": 0.035,
+      "white_background": true,
+      "perspective_enabled": true,
+      "min_confidence": 0.2
+    },
+    "illumination": {
+      "enabled": true,
+      "estimator": "guided",
+      "work_size": 1200,
+      "morph_kernel": 41,
+      "guided_radius": 24,
+      "guided_eps": 0.015,
+      "retinex_scales": [
+        15,
+        80,
+        250
+      ],
+      "water_iterations": 500,
+      "target_percentile": 92,
+      "max_gain": 3.2,
+      "strength": 0.92,
+      "residual_strength": 0.18,
+      "color_strength": 0.3,
+      "edge_protection": 0.0
+    },
+    "restoration": {
+      "denoise": true,
+      "noise_threshold": 0.018,
+      "denoise_strength": 5.0,
+      "deblur": true,
+      "sharpen_amount": 0.0,
+      "sharpen_radius": 1.0,
+      "glare": true,
+      "glare_threshold": 0.94,
+      "max_inpaint_ratio": 0.025,
+      "scratches": false,
+      "scratch_strength": 0.5,
+      "fading": true,
+      "fade_strength": 0.28,
+      "clahe_clip": 1.2
+    },
+    "quality": {
+      "warn_edge_retention": 0.72,
+      "warn_glare_ratio": 0.08
+    },
+    "output": {
+      "save_intermediates": false,
+      "jpeg_quality": 95
+    }
+  }
+}
