@@ -1,0 +1,36 @@
+seed: 3407
+pages:
+  enabled: true
+  max_pages: 8
+  min_area_ratio: 0.035
+  perspective_enabled: true
+  white_background: true
+illumination:
+  enabled: true
+  estimator: morphological
+  work_size: 1200
+  morph_kernel: 41
+  guided_radius: 24
+  guided_eps: 0.015
+  paper_saturation: 0.22
+  paper_darkness: 0.08
+  paper_min_area_ratio: 0.002
+  paper_dilate: 5
+  paper_guided_radius: 8
+  retinex_scales: [15, 80, 250]
+  water_iterations: 500
+  max_gain: 3.2
+  strength: 0.92
+  residual_strength: 0.18
+  color_strength: 0.30
+  edge_protection: 0.0
+restoration:
+  denoise: false
+  deblur: false
+  glare: false
+  scratches: false
+  fading: false
+  sharpen_amount: 0.0
+output:
+  save_intermediates: false
+  jpeg_quality: 95

@@ -1,0 +1,3 @@
+pages: {enabled: true, perspective_enabled: true}
+illumination: {estimator: guided, strength: 0.95}
+restoration: {fading: true, fade_strength: 0.40, sharpen_amount: 0.32}

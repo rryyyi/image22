@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "docrestore"
+version = "0.1.0"
+description = "Local, quality-aware restoration of photographed and scanned paper documents"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+  "numpy>=1.26",
+  "scipy>=1.11",
+  "opencv-python-headless>=4.8",
+  "scikit-image>=0.22",
+  "Pillow>=10",
+  "PyYAML>=6",
+  "pandas>=2",
+  "matplotlib>=3.8",
+  "typer>=0.12",
+  "rich>=13",
+  "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+deep = ["torch>=2.2", "torchvision>=0.17"]
+
+[project.scripts]
+docrestore = "docrestore.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"

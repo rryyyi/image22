@@ -1,0 +1,3 @@
+pages: {enabled: true, perspective_enabled: true}
+illumination: {estimator: guided, strength: 0.92}
+restoration: {glare: true, denoise: true, deblur: true}

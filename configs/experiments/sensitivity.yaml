@@ -1,0 +1,3 @@
+pages: {enabled: false}
+illumination: {estimator: guided, work_size: 1000}
+output: {save_intermediates: false}

@@ -1,0 +1,2 @@
+pages: {enabled: false}
+output: {save_intermediates: false}

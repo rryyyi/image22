@@ -1,0 +1,51 @@
+# Environments
+.venv/
+.venvs/
+
+# Third-party source and large local data
+third_party/
+data/
+
+# Python caches and tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+
+# Local logs and temporary files
+logs/
+tmp/
+*.tmp
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Report documents and assets (kept locally, not part of the project repo)
+docs/experiment_report*.md
+docs/experiment_report*.docx
+docs/experiment_report*.pdf
+docs/final_report.md
+docs/文档图像修复实验报告.docx
+docs/文档图像修复实验报告.pdf
+docs/report_assets/
+docs/research/
+docs/.report_preview/
+docs/.report_qa*/
+*~
+~$*
+*.lock~
+
+# Redundant intermediate experiment outputs (kept locally only)
+results/benchmark_final/
+results/benchmark_paper_guided/
+results/benchmark_smoke/
+results/smoke/
+results/qa/
+results/tables/round1/
+/文档图像修复实验报告.docx
+/文档图像修复实验报告.pdf

@@ -1,0 +1,3 @@
+pages: {enabled: false, perspective_enabled: false}
+illumination: {estimator: morphological, strength: 0.75, color_strength: 0.20}
+restoration: {glare: false, denoise: true, deblur: false}
